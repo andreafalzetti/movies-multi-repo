@@ -1,6 +1,6 @@
 dependencies:
-  - https://github.com/okteto/movies-frontend
-  - https://github.com/okteto/movies-api
+  - https://github.com/andreafalzetti/movies-frontend
+  - https://github.com/andreafalzetti/movies-api
 
 deploy:
   - name: Deploy MongoDB
