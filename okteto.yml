@@ -5,6 +5,14 @@ deploy:
     command: helm upgrade --install my-movies-frontend ./movies-frontend/chart --set image=${OKTETO_BUILD_FRONTEND_IMAGE}    
   - name: Deploy API
     command: helm upgrade --install my-movies-api ./movies-api/chart --set image=${OKTETO_BUILD_API_IMAGE}
+  - name: Debug commands
+    command: |
+      ls -la
+      pwd
+      git status --porcelain
+
+  - name: Sleep
+    command: sleep 600
 
 build:
   api:
