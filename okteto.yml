@@ -2,9 +2,9 @@ deploy:
   - name: Deploy MongoDB
     command:  helm upgrade --install mongodb mongodb-12.1.30.tgz -f values.yml
   - name: Deploy Frontend
-    command: helm upgrade --install movies-frontend chart --set image=${OKTETO_BUILD_FRONTEND_IMAGE}    
+    command: helm upgrade --install my-movies-frontend ./movies-frontend/chart --set image=${OKTETO_BUILD_FRONTEND_IMAGE}    
   - name: Deploy API
-    command: helm upgrade --install movies-api chart --set image=${OKTETO_BUILD_API_IMAGE}
+    command: helm upgrade --install my-movies-api ./movies-api/chart --set image=${OKTETO_BUILD_API_IMAGE}
 
 build:
   api:
