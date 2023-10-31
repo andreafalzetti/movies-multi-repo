@@ -11,9 +11,6 @@ deploy:
       pwd
       git status --porcelain
 
-  - name: Sleep
-    command: sleep 600
-
 build:
   api:
     context: movies-api
