@@ -11,8 +11,8 @@ deploy:
       pwd
       git status --porcelain
 
-  - name: Sleep
-    command: sleep 600
+  #- name: Sleep
+  #  command: sleep 600
 
 build:
   api:
