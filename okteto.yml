@@ -9,7 +9,9 @@ deploy:
     command: |
       ls -la
       pwd
+      echo "_____"
       git status --porcelain
+      echo "_____ DIFF ->"
       git diff
 
   #- name: Sleep
