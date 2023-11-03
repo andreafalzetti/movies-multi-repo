@@ -10,6 +10,7 @@ deploy:
       ls -la
       pwd
       git status --porcelain
+      git diff
 
   #- name: Sleep
   #  command: sleep 600
