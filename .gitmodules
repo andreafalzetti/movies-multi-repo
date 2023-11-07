@@ -1,3 +1,4 @@
+
 [submodule "movies-frontend"]
 	path = movies-frontend
 	url = https://github.com/andreafalzetti/movies-frontend
