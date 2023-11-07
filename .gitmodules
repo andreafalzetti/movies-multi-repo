@@ -1,6 +1,6 @@
 [submodule "movies-frontend"]
 	path = movies-frontend
-	url = https://github.com/andreafalzetti/movies-frontend
+	url = git@github.com:andreafalzetti/movies-frontend.git
 [submodule "movies-api"]
 	path = movies-api
-	url = https://github.com/andreafalzetti/movies-api
+	url = git@github.com:andreafalzetti/movies-api.git

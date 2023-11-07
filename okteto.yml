@@ -7,12 +7,18 @@ deploy:
     command: helm upgrade --install my-movies-api ./movies-api/chart --set image=${OKTETO_BUILD_API_IMAGE}
   - name: Debug commands
     command: |
+      echo "**** LS *****"
       ls -la
+      echo "*************"
+      echo "**** PWD *****"
       pwd
-      echo "_____"
+      echo "*************"
+      echo "**** git status *****"
       git status --porcelain
-      echo "_____ DIFF ->"
+      echo "*************"
+      echo "**** git diff *****"
       git diff
+      echo "*************"
 
   #- name: Sleep
   #  command: sleep 600
