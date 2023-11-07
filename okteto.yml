@@ -7,6 +7,9 @@ deploy:
     command: helm upgrade --install my-movies-api ./movies-api/chart --set image=${OKTETO_BUILD_API_IMAGE}
   - name: Debug commands
     command: |
+      echo "**** git version *****"
+      git --version
+      echo "*************"    
       echo "**** LS *****"
       ls -la
       echo "*************"
